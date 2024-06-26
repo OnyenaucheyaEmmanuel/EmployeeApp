@@ -1,0 +1,40 @@
+<html>
+  <body>
+  
+    <form method="POST">  {% csrf_token %}
+      FirstName :
+      <input type="text" placeholder="Enter your name" name="first_name" />
+      <br /><br />
+      LastName :
+      <input type="text" placeholder="Enter your name" name="last_name" /><br />
+      Phone :
+      <input
+        type="number"
+        placeholder="Enter your name"
+        name="phone"
+      /><br /><br />
+      Email :
+      <input
+        type="email"
+        placeholder="Enter your name"
+        name="email"
+      /><br /><br />
+      Date Of Birth :
+      <input
+        type="date"
+        placeholder="Enter your name"
+        name="date_of_birth"
+      /><br /><br />
+      {% comment %} JobTitle :
+      <input
+        type="text"
+        placeholder="Enter your name"
+        name="job-title"
+      /><br /><br />
+      Hire Date :
+      <input type="date" placeholder="Enter your name" name="hire_date" /> {% endcomment %}
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
